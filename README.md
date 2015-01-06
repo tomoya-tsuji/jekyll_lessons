@@ -1,5 +1,6 @@
 # [ドットインストールjekyllの練習] (http://dotinstall.com/lessons/basic_jekyll)
 
+
 ## バーション
   - ruby 2.1.0
   - gem 2.2.2
@@ -50,3 +51,9 @@ layout: default
 ---
 ```
 として関連づけてやる	
+
+### lesson5 css/画像を追加してみる
+
+_layoutなどの特殊なフォルダ以外のものは、ビルドした際に自動で生成されるので
+同じ階層にそのまま作成してよい
+
