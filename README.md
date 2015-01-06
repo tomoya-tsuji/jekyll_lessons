@@ -92,3 +92,15 @@ encoding: utf-8
 こうすることでmarkdownで日本語が使え、nameという変数を使用できる。
 この際注意すべきなのが、_config.ymlファイルはwatch対象外となるので
 一度、control+Cで抜けて、再度serveする必要がある。
+
+### lesson8 ページの一部を部品化してみる
+
+サイトの一部（例えばfooterとか）を部品化するには
+_includeフォルダというものを作ってあげて、その中に部品となるコードを書く。
+今回はfooter_menu.htmlというものを作って、それをdefalut.htmlにインポートしてやる。
+
+インポート方法は以下の通り
+```
+{% include footer_menu.html %}
+```
+{%%}でかこってやることでインポートできる。
