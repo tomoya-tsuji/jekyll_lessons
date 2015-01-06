@@ -76,3 +76,19 @@ title: my first project
 <body>
 ```
 こうすることで、タイトルをページごとに変更することができる。
+
+### lesson7 site変数を使ってみる
+
+このサイト全体の定義は_config.ymlというファイルの中に書いてやる必要がある。
+```
+_config.yml を作成
+```
+次にその中に
+```
+name:myJekyllSite
+encoding: utf-8
+```
+と記入。
+こうすることでmarkdownで日本語が使え、nameという変数を使用できる。
+この際注意すべきなのが、_config.ymlファイルはwatch対象外となるので
+一度、control+Cで抜けて、再度serveする必要がある。
