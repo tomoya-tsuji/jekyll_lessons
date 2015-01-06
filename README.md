@@ -57,3 +57,22 @@ layout: default
 _layoutなどの特殊なフォルダ以外のものは、ビルドした際に自動で生成されるので
 同じ階層にそのまま作成してよい
 
+### lesson6 page変数を使ってみる
+
+タイトルをページごとに変更するための方法
+index.mdの上部に以下を追加
+```
+---
+layout: default
+title: my first project
+---
+```
+さらに、default.htmlに以下に変更
+```
+<head>
+	<meta charset="UTF-8">
+	<title>{{page.title}}</title>
+	<link rel="stylesheet" href="/css/default.css">
+<body>
+```
+こうすることで、タイトルをページごとに変更することができる。
